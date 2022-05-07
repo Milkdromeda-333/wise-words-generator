@@ -1,0 +1,115 @@
+/* Univeral styling */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=East+Sea+Dokdo&display=swap');
+
+:root {
+  --primary-font: 'Dokdo', cursive;
+  --secondary-font: 'East Sea Dokdo', cursive;
+  --color: firebrick;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+/* General */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  /* margin: 2rem 0 2rem; */
+  font-family: var(--primary-font);
+  letter-spacing: 5px;
+  color: var(--color);
+  text-align: center;
+}
+
+p {
+  margin: 4rem;
+  text-align: center;
+  max-width: 50rem;
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  height: 3rem;
+  padding: 0 2rem;
+}
+
+/* Button styling */
+button {
+  height: 3.5rem;
+  width: 9rem;
+  background-color: var(--color);
+  border: 1px solid white;
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+button:hover {
+  border: none;
+}
+
+button:active {
+  border: 1px solid white;
+}
+
+details {
+  margin-top: 5rem;
+  align-self: flex-start;
+}
+
+details p {
+  font-size: 1.5rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1000px) {
+  p {
+    height: 2rem;
+    margin: 0;
+  }
+
+  button {
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  button {
+    margin-top: 15rem;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  img {
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  button {
+    margin-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  button {
+    margin-top: 28rem;
+  }
+}
